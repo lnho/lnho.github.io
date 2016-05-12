@@ -53,7 +53,7 @@
         
           <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Zoeken"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -99,7 +99,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/05/12/hello-world/" data-id="cio3oe4fk00079kp3yoirkj08" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/05/12/hello-world/" data-id="cio3ol2fw0001ecp3qxuxd3mc" class="article-share-link">Delen</a>
       
       
     </footer>
@@ -180,7 +180,236 @@ INSERT OVERWRITE TABLE tablename1 [PARTITION (partcol1=val1, partcol2=val2 ...)]
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/05/12/hive-basic-operation/" data-id="cio3of49800002sp37nclb1kw" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/05/12/hive-basic-operation/" data-id="cio3ol2fr0000ecp3g23f0qia" class="article-share-link">Delen</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-java-common" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/04/02/java-common/" class="article-date">
+  <time datetime="2015-04-02T08:27:01.000Z" itemprop="datePublished">2015-04-02</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/java/">java</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/04/02/java-common/">JavaWeb常用的操作</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>###常用操作</p>
+<ul>
+<li><p>获取class路径：  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">URL path=Thread.currentThread().getContextClassLoader().getResource(&quot;server.xml&quot;);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>读取properties文件：  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">InputStream in = lnew BufferedInputStream(new FileInputStream(name));  </span><br><span class="line">Properties p = new Properties();  </span><br><span class="line">p.load(in);</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>###常用软件</p>
+<p>####Maven</p>
+<ul>
+<li>打包命令<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$mvn package -DskipTests -Pproduct</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>####Nginx</p>
+<ul>
+<li>重启命令：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/nginx/sbin/nginx -s reload		//平滑重启</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>####Memcached</p>
+<ul>
+<li>启动命令：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$/usr/local/memcached/bin/memcached -d -c 10240 -m 1024 -u root</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>-d 选项是启动一个守护进程<br>-m 是分配给Memcache使用的内存数量，单位是MB，这里是1024MB，默认是64MB<br>-u 是运行Memcache的用户，这里是root<br>-l 是监听的服务器IP地址，默认应该是本机<br>-p 是设置Memcache监听的端口，默认是11211，最好是1024以上的端口<br>-c 选项是最大运行的并发连接数，默认是1024，这里设置了10240，按照你服务器的负载量来设定<br>-P 是设置保存Memcache的pid文件位置<br>-h 打印帮助信息<br>-v 输出警告和错误信息<br>-vv 打印客户端的请求和返回信息  </p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2015/04/02/java-common/" data-id="cio3ol2g90004ecp326ejccze" class="article-share-link">Delen</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-linux-start" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/04/01/linux-start/" class="article-date">
+  <time datetime="2015-04-01T13:49:01.000Z" itemprop="datePublished">2015-04-01</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/linux/">linux</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/04/01/linux-start/">初学Linux应掌握的Shell命令</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>###基本操作</p>
+<ul>
+<li><p>模糊查询正在运行的进程：  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ps -ef|grep tomcat</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>解压tar.gz：  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$tar -xzvf abc.tar.gz</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>修改环境变量：  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$vi /etc/profile  //以root运行</span><br><span class="line">到文件末尾新增一行:export PATH=&quot;/home/abc/bin:$PATH&quot;，保存退出</span><br><span class="line">$source /etc/profile  //使配置立即生效</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>查找文件：  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$find / -name abc.sh</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在后台运行程序（用户注销后仍然保持运行）：  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$nohup abc.sh &amp;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>###防火墙相关</p>
+<p>####CentOS防火墙</p>
+<ul>
+<li>打开端口<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$/sbin/iptables -I INPUT -p tcp --dport 22 -j ACCEPT  </span><br><span class="line">$/etc/rc.d/init.d/iptables save</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>重启计算机后，防火墙默认已经开放了22这个端口。</p>
+<ul>
+<li><p>临时性的完全关闭防火墙，可以不重启机器：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$/etc/init.d/iptables status                // 查看防火墙状态</span><br><span class="line">$/etc/init.d/iptables stop                    // 本次关闭防火墙</span><br><span class="line">$/etc/init.d/iptables restart                // 重启防火墙</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>永久性关闭防火墙：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$chkconfig --level 35 iptables off   // 注意中间的是两个英式小短线；重启</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2015/04/01/linux-start/" data-id="cio3ol2gi0008ecp3zx7ysrmo" class="article-share-link">Delen</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-tomcat-alias" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/03/20/tomcat-alias/" class="article-date">
+  <time datetime="2015-03-20T07:40:56.000Z" itemprop="datePublished">2015-03-20</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/java/">java</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/03/20/tomcat-alias/">Tomcat设置网站别名</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ul>
+<li>打开Tomcat目录下的 <code>conf/server.xml</code> 文件,新增一行 <code>&lt;Alias&gt;你的域名&lt;/Alias&gt;</code> ：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;Host name=&quot;lnho.github.io&quot; appBase=&quot;webapp&quot; unpackWARs=&quot;true&quot; autoDeploy=</span><br><span class="line">&quot;true&quot; xmlValidation=&quot;false&quot; xmlNamespaceAware=&quot;false&quot;&gt;</span><br><span class="line">    &lt;Alias&gt;www.lnho.com&lt;/Alias&gt;</span><br><span class="line">    &lt;Context path=&quot;&quot; docBase=&quot;D:/webapps&quot; crossContext=&quot;true&quot; debug=&quot;0&quot;  </span><br><span class="line">	reloadable=&quot;true&quot;/&gt;</span><br><span class="line">&lt;/Host&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2015/03/20/tomcat-alias/" data-id="cio3ol2gf0007ecp3j9qbemh1" class="article-share-link">Delen</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-oracle-tablespace" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2014/11/06/oracle-tablespace/" class="article-date">
+  <time datetime="2014-11-06T08:05:15.000Z" itemprop="datePublished">2014-11-06</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/database/">database</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2014/11/06/oracle-tablespace/">Oracle表空间操作</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>###查询表空间</p>
+<ul>
+<li>执行：<code>select name from v$datafile</code> 查询表空间中数据文件具体位置。</li>
+<li>执行：<code>select * from DBA_DATA_FILES;</code> 查询表空间中数据文件具体位置和文件名，表空间名等，比上一个全。</li>
+</ul>
+<p>###创建用户<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">#创建临时表空间</span><br><span class="line">create temporary tablespace score_temp</span><br><span class="line">tempfile &apos;/home/usr/oracle/oradata/orcl/score/score_temp.dbf&apos;</span><br><span class="line">size 50m</span><br><span class="line">autoextend on</span><br><span class="line">next 50m maxsize 20480m</span><br><span class="line">extent management local;</span><br><span class="line"></span><br><span class="line">#创建数据表空间</span><br><span class="line">create tablespace score</span><br><span class="line">logging</span><br><span class="line">datafile &apos;/home/usr/oracle/oradata/orcl/score/score.dbf&apos;</span><br><span class="line">size 100m</span><br><span class="line">autoextend on</span><br><span class="line">next 50m maxsize 20480m</span><br><span class="line">extent management local;</span><br><span class="line"></span><br><span class="line">#创建用户并指定表空间</span><br><span class="line">create user score identified by score</span><br><span class="line">default tablespace score</span><br><span class="line">temporary tablespace score_temp;</span><br><span class="line"></span><br><span class="line">#给用户授予权限</span><br><span class="line">grant connect,resource to score;</span><br></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2014/11/06/oracle-tablespace/" data-id="cio3ol2gb0005ecp3tyrexq7i" class="article-share-link">Delen</a>
       
       
     </footer>
@@ -197,9 +426,9 @@ INSERT OVERWRITE TABLE tablename1 [PARTITION (partcol1=val1, partcol2=val2 ...)]
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Categories</h3>
+    <h3 class="widget-title">Categorieën</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/hive/">hive</a></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/database/">database</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/hive/">hive</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/java/">java</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/linux/">linux</a></li></ul>
     </div>
   </div>
 
@@ -212,9 +441,9 @@ INSERT OVERWRITE TABLE tablename1 [PARTITION (partcol1=val1, partcol2=val2 ...)]
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
+    <h3 class="widget-title">Archieven</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/04/">April 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">March 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/11/">November 2014</a></li></ul>
     </div>
   </div>
 
@@ -222,7 +451,7 @@ INSERT OVERWRITE TABLE tablename1 [PARTITION (partcol1=val1, partcol2=val2 ...)]
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
+    <h3 class="widget-title">Recente berichten</h3>
     <div class="widget">
       <ul>
         
@@ -232,6 +461,18 @@ INSERT OVERWRITE TABLE tablename1 [PARTITION (partcol1=val1, partcol2=val2 ...)]
         
           <li>
             <a href="/2016/05/12/hive-basic-operation/">HiveQL基本操作整理</a>
+          </li>
+        
+          <li>
+            <a href="/2015/04/02/java-common/">JavaWeb常用的操作</a>
+          </li>
+        
+          <li>
+            <a href="/2015/04/01/linux-start/">初学Linux应掌握的Shell命令</a>
+          </li>
+        
+          <li>
+            <a href="/2015/03/20/tomcat-alias/">Tomcat设置网站别名</a>
           </li>
         
       </ul>

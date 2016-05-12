@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>初学Linux应掌握的Shell命令 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="###基本操作
+
+模糊查询正在运行的进程：  
+1$ps -ef|grep tomcat
+
+解压tar.gz：  
+1$tar -xzvf abc.tar.gz
+
+修改环境变量：  
+123$vi /etc/profile  //以root运行到文件末尾新增一行:export PATH=&amp;quot;/home/abc/bin:$PATH&amp;quot;，保存退出$source /etc/profile">
+<meta property="og:type" content="article">
+<meta property="og:title" content="初学Linux应掌握的Shell命令">
+<meta property="og:url" content="http://yoursite.com/2015/04/01/linux-start/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="###基本操作
+
+模糊查询正在运行的进程：  
+1$ps -ef|grep tomcat
+
+解压tar.gz：  
+1$tar -xzvf abc.tar.gz
+
+修改环境变量：  
+123$vi /etc/profile  //以root运行到文件末尾新增一行:export PATH=&amp;quot;/home/abc/bin:$PATH&amp;quot;，保存退出$source /etc/profile">
+<meta property="og:updated_time" content="2016-05-12T02:33:28.928Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="初学Linux应掌握的Shell命令">
+<meta name="twitter:description" content="###基本操作
+
+模糊查询正在运行的进程：  
+1$ps -ef|grep tomcat
+
+解压tar.gz：  
+1$tar -xzvf abc.tar.gz
+
+修改环境变量：  
+123$vi /etc/profile  //以root运行到文件末尾新增一行:export PATH=&amp;quot;/home/abc/bin:$PATH&amp;quot;，保存退出$source /etc/profile">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Zoeken"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-linux-start" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/04/01/linux-start/" class="article-date">
+  <time datetime="2015-04-01T13:49:01.000Z" itemprop="datePublished">2015-04-01</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/linux/">linux</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      初学Linux应掌握的Shell命令
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>###基本操作</p>
+<ul>
+<li><p>模糊查询正在运行的进程：  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ps -ef|grep tomcat</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>解压tar.gz：  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$tar -xzvf abc.tar.gz</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>修改环境变量：  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$vi /etc/profile  //以root运行</span><br><span class="line">到文件末尾新增一行:export PATH=&quot;/home/abc/bin:$PATH&quot;，保存退出</span><br><span class="line">$source /etc/profile  //使配置立即生效</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>查找文件：  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$find / -name abc.sh</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在后台运行程序（用户注销后仍然保持运行）：  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$nohup abc.sh &amp;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>###防火墙相关</p>
+<p>####CentOS防火墙</p>
+<ul>
+<li>打开端口<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$/sbin/iptables -I INPUT -p tcp --dport 22 -j ACCEPT  </span><br><span class="line">$/etc/rc.d/init.d/iptables save</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>重启计算机后，防火墙默认已经开放了22这个端口。</p>
+<ul>
+<li><p>临时性的完全关闭防火墙，可以不重启机器：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$/etc/init.d/iptables status                // 查看防火墙状态</span><br><span class="line">$/etc/init.d/iptables stop                    // 本次关闭防火墙</span><br><span class="line">$/etc/init.d/iptables restart                // 重启防火墙</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>永久性关闭防火墙：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$chkconfig --level 35 iptables off   // 注意中间的是两个英式小短线；重启</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2015/04/01/linux-start/" data-id="cio3ol2gi0008ecp3zx7ysrmo" class="article-share-link">Delen</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2015/04/02/java-common/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Nieuwer</strong>
+      <div class="article-nav-title">
+        
+          JavaWeb常用的操作
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2015/03/20/tomcat-alias/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Ouder</strong>
+      <div class="article-nav-title">Tomcat设置网站别名</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categorieën</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/database/">database</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/hive/">hive</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/java/">java</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/linux/">linux</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archieven</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/04/">April 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">March 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/11/">November 2014</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recente berichten</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/05/12/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2016/05/12/hive-basic-operation/">HiveQL基本操作整理</a>
+          </li>
+        
+          <li>
+            <a href="/2015/04/02/java-common/">JavaWeb常用的操作</a>
+          </li>
+        
+          <li>
+            <a href="/2015/04/01/linux-start/">初学Linux应掌握的Shell命令</a>
+          </li>
+        
+          <li>
+            <a href="/2015/03/20/tomcat-alias/">Tomcat设置网站别名</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>

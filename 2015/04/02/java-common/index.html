@@ -3,21 +3,36 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Hello World | Hexo</title>
+  <title>JavaWeb常用的操作 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+  <meta name="description" content="###常用操作
+
+获取class路径：  
+1URL path=Thread.currentThread().getContextClassLoader().getResource(&amp;quot;server.xml&amp;quot;);
+
+读取properties文件：  
+123InputStream in = lnew BufferedInputStream(new FileInputStream(">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2016/05/12/hello-world/index.html">
+<meta property="og:title" content="JavaWeb常用的操作">
+<meta property="og:url" content="http://yoursite.com/2015/04/02/java-common/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
-<meta property="og:updated_time" content="2016-05-12T02:08:50.962Z">
+<meta property="og:description" content="###常用操作
+
+获取class路径：  
+1URL path=Thread.currentThread().getContextClassLoader().getResource(&amp;quot;server.xml&amp;quot;);
+
+读取properties文件：  
+123InputStream in = lnew BufferedInputStream(new FileInputStream(">
+<meta property="og:updated_time" content="2016-05-12T02:32:56.408Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+<meta name="twitter:title" content="JavaWeb常用的操作">
+<meta name="twitter:description" content="###常用操作
+
+获取class路径：  
+1URL path=Thread.currentThread().getContextClassLoader().getResource(&amp;quot;server.xml&amp;quot;);
+
+读取properties文件：  
+123InputStream in = lnew BufferedInputStream(new FileInputStream(">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -66,12 +81,16 @@ Quick">
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-java-common" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2016/05/12/hello-world/" class="article-date">
-  <time datetime="2016-05-12T02:08:50.958Z" itemprop="datePublished">2016-05-12</time>
+    <a href="/2015/04/02/java-common/" class="article-date">
+  <time datetime="2015-04-02T08:27:01.000Z" itemprop="datePublished">2015-04-02</time>
 </a>
     
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/java/">java</a>
+  </div>
+
   </div>
   <div class="article-inner">
     
@@ -80,7 +99,7 @@ Quick">
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      JavaWeb常用的操作
     </h1>
   
 
@@ -88,20 +107,37 @@ Quick">
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        <p>###常用操作</p>
+<ul>
+<li><p>获取class路径：  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">URL path=Thread.currentThread().getContextClassLoader().getResource(&quot;server.xml&quot;);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>读取properties文件：  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">InputStream in = lnew BufferedInputStream(new FileInputStream(name));  </span><br><span class="line">Properties p = new Properties();  </span><br><span class="line">p.load(in);</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>###常用软件</p>
+<p>####Maven</p>
+<ul>
+<li>打包命令<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$mvn package -DskipTests -Pproduct</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>####Nginx</p>
+<ul>
+<li>重启命令：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/nginx/sbin/nginx -s reload		//平滑重启</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>####Memcached</p>
+<ul>
+<li>启动命令：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$/usr/local/memcached/bin/memcached -d -c 10240 -m 1024 -u root</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>-d 选项是启动一个守护进程<br>-m 是分配给Memcache使用的内存数量，单位是MB，这里是1024MB，默认是64MB<br>-u 是运行Memcache的用户，这里是root<br>-l 是监听的服务器IP地址，默认应该是本机<br>-p 是设置Memcache监听的端口，默认是11211，最好是1024以上的端口<br>-c 选项是最大运行的并发连接数，默认是1024，这里设置了10240，按照你服务器的负载量来设定<br>-P 是设置保存Memcache的pid文件位置<br>-h 打印帮助信息<br>-v 输出警告和错误信息<br>-vv 打印客户端的请求和返回信息  </p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/05/12/hello-world/" data-id="cio3ol2fw0001ecp3qxuxd3mc" class="article-share-link">Delen</a>
+      <a data-url="http://yoursite.com/2015/04/02/java-common/" data-id="cio3ol2g90004ecp326ejccze" class="article-share-link">Delen</a>
       
       
     </footer>
@@ -110,10 +146,19 @@ Quick">
     
 <nav id="article-nav">
   
+    <a href="/2016/05/12/hive-basic-operation/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Nieuwer</strong>
+      <div class="article-nav-title">
+        
+          HiveQL基本操作整理
+        
+      </div>
+    </a>
   
-    <a href="/2016/05/12/hive-basic-operation/" id="article-nav-older" class="article-nav-link-wrap">
+  
+    <a href="/2015/04/01/linux-start/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Ouder</strong>
-      <div class="article-nav-title">HiveQL基本操作整理</div>
+      <div class="article-nav-title">初学Linux应掌握的Shell命令</div>
     </a>
   
 </nav>
